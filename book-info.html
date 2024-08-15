@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product</title>
+  <link rel="icon" href="png.png" type="image/png">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- footer extra css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/base/products.css" />
+  <link rel="stylesheet" href="css/home/home.css">
+  <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="book-info.css" />
+
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="png.png" alt="" width="30" height="24">
+      </a>
+      <a class="navbar-brand" href="#">Library<span>Hub</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="products.html">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="home.html#faqAccordion">Helps</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="home.html#subscription">Subscription</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+              aria-controls="offcanvasTop">Gift Cards</a>
+          </li>
+        </ul>
+
+        <a href="index.html"><button class="button">
+            <svg class="icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+              height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 0 0-44.4 0L77.5 505a63.9 63.9 0 0 0-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0 0 18.7-45.3c0-17-6.7-33.1-18.8-45.2zM568 868H456V664h112v204zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7 23.1 23.1L882 542.3h-96.1z">
+              </path>
+            </svg>
+          </button></a>
+
+        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <svg class="icon" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"
+            height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content"
+              style="background-color: antiquewhite; border: 3px solid black; box-shadow: 0px 0px 0px 1200px black;">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Search Bar</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" style="text-align: center;">
+                <h2 style="font-family: cursive;">Service is unavailable right now</h2>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="button" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+          <svg class="icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em"
+            width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 2.5a5.5 5.5 0 0 1 3.096 10.047 9.005 9.005 0 0 1 5.9 8.181.75.75 0 1 1-1.499.044 7.5 7.5 0 0 0-14.993 0 .75.75 0 0 1-1.5-.045 9.005 9.005 0 0 1 5.9-8.18A5.5 5.5 0 0 1 12 2.5ZM8 8a4 4 0 1 0 8 0 4 4 0 0 0-8 0Z">
+            </path>
+          </svg>
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content"
+              style="background-color: antiquewhite; border: 3px solid black; box-shadow: 0px 0px 0px 1200px black;">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Profile Page</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" style="display: flex;">
+                <a href="login_page.html"><button class="upgrade-btn" style="margin: 10px;">Sign In</button></a>
+                <a href="signUp.html"><button class="upgrade-btn" style="margin: 10px;">Sign Up</button></a>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="button" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+          <svg class="icon" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+            stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+        </button>
+
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content"
+              style="background-color: antiquewhite; border: 3px solid black; box-shadow: 0px 0px 0px 1200px black;">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Cart Page</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" style="text-align: center;">
+                <i style='font-size:124px' class='fas'>&#xf218;</i>
+                <h2 style="font-family: cursive;">OOPS!!! Your Cart is empty</h2>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="button" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <section class="offcanvas-topp">
+
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div class="offcanvas-header">
+        <h5 id="offcanvasTopLabel">Offer Only For New Users</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+
+        <form class="discountForm">
+          <img src="image/home/platinum-membership.jpeg" alt="">
+          <span class="DiscountHeading">TAKE 10% OFF.</span>
+          <p class="DiscountSubheading">Here is your discount! The promo code will be sent to your email.</p>
+          <div class="inputContainer">
+            <input placeholder="Enter your email" type="email" name="email" id="email-address">
+            <button type="submit" class="submitButton">Get it!</button>
+          </div>
+        </form>
+
+
+        <!--  Gift gard section -->
+        <!--  Gift gard section -->
+        <!--  Gift gard section -->
+        <!--  Gift gard section -->
+        <!--  Gift gard section -->
+
+        <form class="discountForm">
+          <img src="image/home/gold-memebership.jpeg" alt="">
+          <span class="DiscountHeading">TAKE 15% OFF.</span>
+          <p class="DiscountSubheading">Here is your discount! The promo code will be sent to your email.</p>
+          <div class="inputContainer">
+            <input placeholder="Enter your email" type="email" name="email" id="email-address">
+            <button type="submit" class="submitButton">Get it!</button>
+          </div>
+        </form>
+
+        <form class="discountForm">
+          <img src="image/home/diamond-memebrship (1).png" alt="">
+          <span class="DiscountHeading">TAKE 20% OFF.</span>
+          <p class="DiscountSubheading">Here is your discount! The promo code will be sent to your email.</p>
+          <div class="inputContainer">
+            <input placeholder="Enter your email" type="email" name="email" id="email-address">
+            <button type="submit" class="submitButton">Get it!</button>
+          </div>
+        </form>
+
+        <form class="discountForm">
+          <img src="image/home/7day-trail (1).jpeg" alt="">
+          <span class="DiscountHeading">TAKE 10% OFF.</span>
+          <p class="DiscountSubheading">Here is your 7-day fre trail! The promo code will be sent to your
+            email.</p>
+          <div class="inputContainer">
+            <input placeholder="Enter your email" type="email" name="email" id="email-address">
+            <button type="submit" class="submitButton">Get it!</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <div id="top-div">
+    <div id="product-img">
+      <img src="image/Best-selling/best-selling1.jpg" alt=" product image" />
+
+    </div>
+    <div id="product-detail">
+      <div id="name-and-desc">
+        <div>
+          <h1 id="product-name">Karma: A Yogi's Guide</h1>
+        </div>
+        <div>
+          <h3 id="price" style="color: red;">₹700 <br><del><span style="color: black;">M.R.P: ₹800</span></del></h3>
+        </div>
+        <div>
+          <p id="desc">
+            Karma: A Yogi's Guide to Crafting Your Destiny NEW YORK TIMES, USA TODAY, and PUBLISHERS WEEKLY BESTSELLER ,
+            must-read book on spirituality and self-improvement by Sadhguru
+          </p>
+        </div>
+      </div>
+      <div id="cart-and-quantity-btn">
+        <div class="cart-and-quantity-btns">
+          <div id="quantity-and-btn-div">
+            <button id="minus">-</button>
+
+            <button id="quantity">1</button>
+            <button id="plus">+</button>
+          </div>
+          <button data-bs-toggle="modal" data-bs-target="#exampleModal1"
+            aria-label="Toggle navigation" id="cart-btn">
+            Add to Cart
+          </button>
+          <div id="wishlist-div">
+            <img width="70" height="40" id="wishlist-logo" src="https://www.svgrepo.com/show/13666/heart.svg" alt="" />
+          </div>
+        </div>
+        <div class="cart-and-quantity-btnnss">
+          <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation" id="buy-btn">
+            Buy Now
+          </button>
+          <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation" id="read-btn">
+            Read Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr id="firsthr" />
+  <div id="whydiv">
+    <div id="left-why-div">
+      <h4>About the Book</h4>
+    </div>
+    <div id="right-why-div">
+      <p>
+        This is the unfettered story of Ashneer Grover-the favourite and misunderstood poster boy of Start-up India.
+        Raw, gut-wrenching in its honesty and completely from the heart, this is storytelling at its finest.
+      </p><br>
+      <p>
+        A young boy with a 'refugee' tag growing up in Delhi's Malviya Nagar outpaces his circumstances by becoming a
+        rank-holder at the pinnacle of academic excellence in India-IIT Delhi. He goes on to do an MBA from the hallowed
+        halls of IIM Ahmedabad, builds a career as an investment banker at Kotak Investment Banking and AmEx, and is
+        pivotal in the making of two unicorns-Grofers, as CFO, and BharatPe, as co-founder.
+      </p><br>
+      <p>
+        As a judge on the popular TV show Shark Tank India, Ashneer becomes a household name even as his life turns
+        upside down. Controversy, media spotlight, garrulous social media chatter descend, making it difficult to
+        distinguish fact from fiction.
+      </p>
+      <div id="img-div">
+        <div>
+          <img id="image2" class="resized-image"
+            src="image/Best-selling/karma.jpeg"
+            alt="" />
+        </div>
+        <div>
+          <img id="image3" class="resized-image"
+            src="image/Best-selling/best-selling1.jpg"
+            alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr id="secondhr" />
+  <div id="details">
+    <div id="left-details">
+      <h4>Product Details</h4>
+    </div>
+    <div id="right-details">
+      <div>
+        <h5>ISBN-13:</h5>
+        <p>9780670097111</p>
+      </div>
+      <hr class="detailshr" />
+      <div>
+        <h5>Publisher Date:</h5>
+        <p>
+          07 May 2023
+        </p>
+      </div>
+      <hr class="detailshr" />
+      <div>
+        <h5>No of Pages: </h5>
+        <p>
+          256
+        </p>
+      </div>
+      <hr class="detailshr" />
+      <div>
+        <h5>Weight:</h5>
+        <p>
+          335 gr
+        </p>
+      </div>
+      <hr class="detailshr" />
+      <div>
+        <h5>Language: </h5>
+        <p>
+          English
+        </p>
+      </div>
+      <hr class="detailshr" />
+    </div>
+  </div>
+
+  <hr class="divider">
+
+
+  <section class="footer">
+    <div class="footer-row">
+        <div class="footer-col">
+            <h4>Info</h4>
+            <ul class="links">
+                <li><a href="contactus.html">About Us</a></li>
+                <li><a href="#">Compressions</a></li>
+                <li><a href="contactus.html">Customers</a></li>
+                <li><a href="contactus.html">Service</a></li>
+                <li><a href="index.html">Collection</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Explore</h4>
+            <ul class="links">
+                <li><a href="products.html">Free Books</a></li>
+                <li><a href="products.html">Latest Books</a></li>
+                <li><a href="#">Themes</a></li>
+                <li><a href="products.html">Popular Books</a></li>
+                <li><a href="products.html">Art Books</a></li>
+                <li><a href="products.html">New Uploads</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Legal</h4>
+            <ul class="links">
+                <li><a href="#">Customer Agreement</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">GDPR</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Testimonials</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p>
+                Subscribe to our newsletter for a weekly dose
+                of new books stock, updates, helpful tips, and
+                exclusive offers.
+            </p>
+            <form action="subscribe.html" method="GET" onsubmit="return validateForm()">
+              <input type="text" placeholder="Your email" required>
+              <button type="submit" id="subscribe">SUBSCRIBE</button>
+          </form>
+            <div class="icons">
+                <a href="https://www.facebook.com/karan.prasad.5220665"><i class="fa-brands fa-facebook-f"></i></a>
+               <a href="https://github.com/karanprasad2706"> <i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/karanprasad721/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/karanprasad2706"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <div class="last-2">
+      <h6>Copyright © 2024 libraryhub.com- All Rights Reserved</h6>
+  </div>
+
+
+  <script src="css/bootstrap/JS/bootstrap.min.js"></script>
+</body>
+
+</html>

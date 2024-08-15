@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(246, 210, 158);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .confirmation-container {
+            background-color: #fff;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            text-align: center; 
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: 0px; 
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .message::after {
+            content: "Now you can login with your ";
+            display: inline; 
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-top: 10px;
+        }
+
+        #changingText {
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            animation: colorChange 1s infinite;
+            display: inline; 
+        }
+
+        @keyframes colorChange {
+            0% {
+                background-position: 100%;
+            }
+            100% {
+                background-position: 0%;
+            }
+        }
+
+        .btn-container {
+            margin-top: 20px;
+        }
+
+        .btn {
+            background-color: rgb(246, 210, 158);
+            border: 2px solid rgb(0, 0, 0);
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 10px 10px 10px ;
+        }
+
+        .btn:hover {
+            background-color: rgb(255, 242, 223);
+        }
+
+        .icon {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 5px; 
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const changingText = document.getElementById("changingText");
+            let isBlack = true;
+
+            setInterval(function () {
+                isBlack = !isBlack;
+                changingText.style.color = isBlack ? "green" : "red";
+            }, 1000);
+        });
+    </script>
+</head>
+<body>
+    <div class="confirmation-container">
+
+        <img src="image/confirmdone-icon.png" alt="Done Icon" class="icon">
+        <h1>Subscription Confirmation</h1>
+        <div class="message">
+            <p>You have successfully subscribed.</p>    
+        </div>
+        <div class="btn-container">
+            <p><span id="changingText">Get Upto 30% Off</span></p>
+            <a href="index.html" class="btn">
+                Shop Now
+            </a>
+        </div>
+    </div>
+</body>
+</html>
